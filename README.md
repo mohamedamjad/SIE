@@ -17,7 +17,8 @@
 
 ### Première vulnérabilité
 
-- Nom: UnrealIRCd IRC Daemon
+- Nom : IRC
+- Port : 6667
 - Référence du CVE : 2010-2075
 - Description de la vulnérabilité : Il y a un backdoor dans le code. Elle est déclenchée par l'envoi des lettres "AB" suivis d'un système de commande du serveur sur n'importe quel port d'écoute.
 - Exploit :
@@ -33,16 +34,21 @@
 
 ### Deuxième vulnérabilité
 
-- Nom :
-- Référénce du CVE :
-- Description de la vulnérabilité :
+- Nom : VSFTPD
+- Port : 21
+- Référénce du CVE : Inconnue
+- Description de la vulnérabilité : Il y a un backdoor dans les archives de VSFTPD.
 - Exploit :
+  - Metasploit possède un module nommé __< exploit/unix/ftp/vsftpd_234_backdoor >__ pour exploiter cette vulnérabilité,
 - Correction :
+  - Retrait complet de telnet car la communication par telnet n'est pas chiffré et est facilement interceptée par des outils tel que __wireshark__.
 
 ### Troisième vulnérabilité
 
-- Nom :
-- Référénce du CVE :
-- Description de la vulnérabilité :
+- Nom : Apache HTTPD
+- Référénce du CVE : 2012-1823
+- Description de la vulnérabilité : Il manque un caractère "=" lors de la gestion des requêtes, ce qui permet aux attaquants d'exécuter du code en écrivant des commandes dans la chaine de caractère.
 - Exploit :
+  - Metasploit possède un module nommé __< exploit/multi/http/php_cgi_arg_injection >__ pour exploiter cette vulnérabilité
 - Correction :
+  - Mettre à jour PHP à la version 5.4.2
