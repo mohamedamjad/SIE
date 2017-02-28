@@ -59,3 +59,7 @@
   - Metasploit possède un module nommé __< exploit/multi/http/php_cgi_arg_injection >__ pour exploiter cette vulnérabilité
 - Correction :
   - Mettre à jour PHP à la version 5.4.2
+
+### Notes:
+MAMATH: 19
+AVRIL: 19
