@@ -26,6 +26,9 @@
   - Metasploit possède un module nommé __< exploit/unix/irc/unreal_ircd_3281_backdoor >__ pour exploiter cette vulnérabilité, il ouvre un shell interactif.
 - Correction :
   - Mettre à jour le daemon UnrealIRCd
+  - Limiter l'accès à quelques addresses IP
+  - Configuration :
+    - allow block
   - Problème rencontré :
     - Impossible de mettre à jour le daemon grâce à la commande __apt-get__ à partir du wi-fi de l'école, ni d'un point de connexion d'un smartphone, le problème semble venir de la machine metasploitable sur laquelle on travail.
   - Solution essayé :
@@ -42,6 +45,10 @@
   - Metasploit possède un module nommé __< exploit/unix/ftp/vsftpd_234_backdoor >__ pour exploiter cette vulnérabilité,
 - Correction :
   - Retrait complet de telnet car la communication par telnet n'est pas chiffré et est facilement interceptée par des outils tel que __wireshark__.
+  - Configuration :
+    - anonymous_enable = NO
+    - local_enable = YES
+    - userlist_enable = YES
 
 ### Troisième vulnérabilité
 
