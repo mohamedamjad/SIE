@@ -1,5 +1,5 @@
 # Sécurité des informations et des échanges
--------------------------------------------
+
 ## Groupe
 
 - Mickael AVRIL
