@@ -1,5 +1,10 @@
 # Sécurité des informations et des échanges
 -------------------------------------------
+## Groupe
+
+- Mickael AVRIL
+- Frederic MAMATH
+
 ## TP
 
 - Trouvez 3 vulnérabilités dans la metasploitable
@@ -9,3 +14,5 @@
 - Comment avez-vous fait ?
 
 ## Travail réalisé
+
+1. Recherche des vulnérabilités de la metasploitable
